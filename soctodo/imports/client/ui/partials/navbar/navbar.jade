@@ -1,0 +1,23 @@
+template(name="navbar")
+  nav.navbar.navbar-default.navbar-fixed-top.nav-height(role='navigation')
+    .container
+      // Brand and toggle get grouped for better mobile display
+      .navbar-header
+        button.navbar-toggle(type='button', data-toggle='collapse', data-target='#navbar-collapse')
+          span.sr-only Toggle navigation
+          span.icon-bar
+          span.icon-bar
+          span.icon-bar
+        a.navbar-brand(href='/') Soctodo
+      
+      // Collect the nav links, forms, and other content for toggling
+      #navbar-collapse.collapse.navbar-collapse
+        ul.nav.navbar-nav.navbar-left
+          li.active
+            a(href="/") Главная
+
+          
+
+
+        ul.nav.navbar-nav.navbar-right
+          span Signin

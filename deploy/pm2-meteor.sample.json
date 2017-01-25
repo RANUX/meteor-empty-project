@@ -1,0 +1,27 @@
+{
+  "appName": "soctodo",
+  "appLocation": {
+    "local": "/Users/someuser/projects/soctodo/soctodo/",
+    "git": "",
+    "branch": "master"
+  },
+  "meteorSettingsLocation": "/Users/someuser/projects/soctodo/soctodo/settings-test.json",
+  "meteorSettingsInRepo": false,
+  "prebuildScript": "",
+  "meteorBuildFlags": "--debug --architecture os.linux.x86_64",
+  "env": {
+    "ROOT_URL": "http://localhost:3000",
+    "PORT": 3000,
+    "MONGO_URL": "mongodb://docode-mongo:27017/soctodo"
+  },
+  "server": {
+    "host": "localhost",
+    "username": "app",
+    "deploymentDir": "/home/app",
+    "pem":"/Users/someuser/.ssh/id_rsa_docode_video.pem",
+    "port": "2222",
+    "exec_mode": "cluster_mode",
+    "instances": 1
+  },
+  "allowUndeploy": true
+}

@@ -1,0 +1,21 @@
+{
+  "name": "soctodo",
+  "private": true,
+  "scripts": {
+    "start": "meteor run"
+  },
+  "dependencies": {
+    "babel-runtime": "6.18.0",
+    "bcrypt": "^1.0.2",
+    "meteor-node-stubs": "~0.2.0",
+    "lodash": "^4.16.1",
+    "path-to-regexp": "^1.5.3"
+  },
+  "devDependencies": {
+    "eslint": "^3.14.0",
+    "eslint-config-airbnb-base": "^11.0.1",
+    "eslint-import-resolver-meteor": "^0.3.4",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-meteor": "^4.0.1"
+  }
+}
