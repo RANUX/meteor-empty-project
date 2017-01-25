@@ -1,9 +1,12 @@
-FlowRouter.route('/', {
-    name: 'main',
-    subscriptions: function (params) {
+import { FlowRouter } from 'meteor/kadira:flow-router';
+import { BlazeLayout } from 'meteor/kadira:blaze-layout';
 
-    },
-    action: function() {
-      BlazeLayout.render('layout', {main: 'main'});
-    }
+FlowRouter.route('/', {
+  name: 'main',
+  subscriptions() {
+
+  },
+  action() {
+    BlazeLayout.render('layout', { main: 'main' });
+  },
 });

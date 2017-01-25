@@ -1,0 +1,66 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module"
+  },
+  "plugins": [
+    "meteor",
+    "import"
+  ],
+  "extends": [
+    "airbnb-base",
+    "plugin:meteor/recommended"
+  ],
+  "env": {
+    "meteor": true,
+    "browser": true,
+    "node": true
+  },
+  "rules": {
+    "no-unexpected-multiline": 2,
+    "no-throw-literal": 0,
+    "meteor/no-session": [
+      0
+    ],
+    "meteor/prefer-session-equals": [
+      2
+    ]
+  },
+  "globals": {
+    "Foo": false,
+    "Bar": false,
+    "FlowRouter": false,
+    "GoogleMaps": false,
+    "moment": false
+  },
+  "settings": {
+    "import/core-modules": [
+      "meteor/meteor",
+      "meteor/mongo",
+      "meteor/aldeed:simple-schema",
+      "meteor/manuel:viewmodel",
+      "meteor/tap:i18n",
+      "meteor/templating",
+      "meteor/accounts-base",
+      "meteor/kadira:flow-router",
+      "meteor/kadira:blaze-layout"
+    ],
+    "import/resolver": {
+      "meteor" : {
+        "extensions": [
+          ".js",
+          ".es6",
+          ".coffee"
+        ],
+        "paths": [
+          "/Users/alexanderrazzhivin/.nvm/versions/node/v6.6.0/lib/node_modules"
+        ],
+        "moduleDirectory": [
+          "node_modules",
+          "public/bower_components",
+          "imports"
+        ]
+      }
+    }
+  }
+}
